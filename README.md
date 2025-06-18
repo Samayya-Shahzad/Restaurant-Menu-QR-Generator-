@@ -12,7 +12,7 @@ ScanMenu is a Django-based web application that allows restaurant owners to gene
 - CSRF-protected POST form submission.
 - Media configuration for dynamic image storage.
 
- ##Requirements
+## Requirements
 1. Python 3.x
 2. Django
 3. qrcode
