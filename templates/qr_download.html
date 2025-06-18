@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: rgb(249, 226, 245);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 80px auto;
+            background: #fcb4ae;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: rgb(91, 2, 83) !important;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: #edd7eb;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .qr-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            background-color: rgb(88, 1, 81);
+            border: none;
+            color: beige;
+        }
+
+        .btn-custom:hover {
+            background-color: rgb(244, 222, 242);
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Download QR Code</a>
+        </div>
+    </nav>
+
+    <!-- QR Display Section -->
+    <div class="form-container">
+        <h2>{{ rest_name }}</h2>
+        <img src="{{ qr_url }}" alt="QR Code" class="qr-image mb-3">
+        <a href="{{ qr_url }}" download="{{filename}}" class="btn btn-custom">Download</a>
+        
+    </div>
+
+</body>
+</html>
