@@ -4,7 +4,7 @@ ScanMenu is a Django-based web application that allows restaurant owners to gene
 
 ---
 
- Features
+## Features
 
 - Generate QR codes linked to restaurant menus.
 - Download QR code as a PNG image.
@@ -12,4 +12,9 @@ ScanMenu is a Django-based web application that allows restaurant owners to gene
 - CSRF-protected POST form submission.
 - Media configuration for dynamic image storage.
 
-
+ ##Requirements
+1. Python 3.x
+2. Django
+3. qrcode
+4. Pillow
+5. Bootstrap 5 (via CDN)
